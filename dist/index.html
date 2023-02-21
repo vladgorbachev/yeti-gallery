@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <link href="bundle.css" rel="stylesheet">
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+  <div class="fotorama"
+    data-allowfullscreen="native"
+    data-width="700"
+    data-ratio="700/467"
+    data-nav="thumbs"
+    data-auto="true"
+    data-autoplay="false"
+    data-shuffle="false"
+    data-clicktransition="crossfade"
+    data-transition="slide"//dissolve
+    data-max-width="100%">
+    <img src="./img1.jpg" alt="Test Car Image Caption">
+    <a href="https://www.youtube.com/watch?v=rqUmm_AMa_0">Desert Rose</a>
+    <img src="./img2.jpg" alt="">
+    <img src="./img3.jpg" alt="">
+    <img src="./img1.jpg" alt="Test Car Image Caption">
+    <img src="./img2.jpg" alt="">
+    <img src="./img3.jpg" alt="">
+    <img src="./img1.jpg" alt="Test Car Image Caption">
+    <img src="./img2.jpg" alt="">
+    <img src="./img3.jpg" alt="">
+    <img src="./img1.jpg" alt="Test Car Image Caption">
+    <img src="./img2.jpg" alt="">
+    <img src="./img3.jpg" alt="">
+  </div>
+
+  <div style="position: absolute; width: 300px; height: 300px;">
+    <div class="fotorama"
+      data-allowfullscreen="true"
+      data-width="700"
+      data-ratio="700/467"
+      data-nav="thumbs"
+      data-auto="true"
+      data-autoplay="1000"
+      data-shuffle="true"
+      data-clicktransition="crossfade"
+      data-transition="slide"//dissolve
+      data-max-width="100%">
+      <img src="./img1.jpg" alt="Test Car Image Caption">
+      <a href="https://www.youtube.com/watch?v=rqUmm_AMa_0">Desert Rose</a>
+      <img src="./img2.jpg" alt="">
+      <img src="./img3.jpg" alt="">
+      <img src="./img1.jpg" alt="Test Car Image Caption">
+      <img src="./img2.jpg" alt="">
+      <img src="./img3.jpg" alt="">
+      <img src="./img1.jpg" alt="Test Car Image Caption">
+      <img src="./img2.jpg" alt="">
+      <img src="./img3.jpg" alt="">
+      <img src="./img1.jpg" alt="Test Car Image Caption">
+      <img src="./img2.jpg" alt="">
+      <img src="./img3.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+<script>
+  $('.fotorama')
+  .on('fotorama:fullscreenenter', (instance) => {
+    console.log("CUSTOMEVENT:fullscreenenter")
+  })
+  .on('fotorama:showend', (data) => {
+    console.log("CUSTOMEVENT:showend", data)
+  })
+</script>
+
+</html>

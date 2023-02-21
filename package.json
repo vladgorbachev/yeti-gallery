@@ -1,0 +1,31 @@
+{
+  "name": "ice-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "dev": "rollup -c rollup.config.mjs --watch",
+    "build": "rollup -c rollup.config.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
+    "postcss-scss": "^4.0.6",
+    "rollup": "^3.9.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sass": "^1.12.17",
+    "rollup-plugin-scss": "^4.0.0",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-sucrase": "^2.1.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4"
+  }
+}
